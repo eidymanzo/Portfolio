@@ -53,7 +53,7 @@ function Projects() {
       ],
 
       github: "https://github.com/eidymanzo/devlab-react-blog",
-      demo: "https://devlab-eidymanzo.netlify.app",
+      demo:  "https://fastidious-donut-f7facc.netlify.app",
     }
 
   ];
