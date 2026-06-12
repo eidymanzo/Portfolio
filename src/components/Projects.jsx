@@ -23,28 +23,39 @@ function Projects() {
         "Base de datos SQL",
         "Testing con Postman",
       ],
+
+      github: "https://github.com/eidymanzo/TechFix",
+      demo: "#",
     },
 
     {
-      title: "Developer Knowledge Hub",
-      status: "En desarrollo",
+      title: "DevLab",
+      status: "Proyecto personal",
       description:
-        "Plataforma web de contenidos técnicos para desarrolladores.",
+        "Blog técnico desarrollado con React y Vite donde documento conocimientos, proyectos y aprendizajes relacionados con desarrollo web, JavaScript y tecnologías cloud.",
 
       technologies: [
         "React",
-        "Node.js",
-        "Express",
+        "Vite",
+        "React Router",
         "JavaScript",
+        "MockAPI",
+        "CSS3",
+        "Netlify",
       ],
 
       features: [
         "Blog técnico",
-        "Frontend en React",
-        "Backend con Node.js",
+        "Filtrado por categorías",
+        "Componentes reutilizables",
         "Diseño responsive",
+        "Deploy en Netlify",
       ],
-    },
+
+      github: "https://github.com/eidymanzo/devlab-react-blog",
+      demo: "https://devlab-eidymanzo.netlify.app",
+    }
+
   ];
 
   return (
@@ -66,27 +77,33 @@ function Projects() {
               ))}
             </div>
             <ul>
-              <li>✓ CRUD completo</li>
-              <li>✓ API REST</li>
-              <li>✓ Diseño Responsive</li>
-              <li>✓ Base de datos SQL</li>
-              <li>✓ Testing con Postman</li>
+              {project.features.map((feature) => (
+                <li key={feature}>✓ {feature}</li>
+              ))}
             </ul>
 
 
 
             <div className="project-links">
               <a
-                href="https://github.com/eidymanzo/TechFix"
+                href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Ver código
               </a>
 
-              <a href="#">
-                Demo próximamente
-              </a>
+              {project.demo === "#" ? (
+                <a href="#">Demo próximamente</a>
+              ) : (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver demo
+                </a>
+              )}
             </div>
           </article>
         ))}
