@@ -30,7 +30,7 @@ function Hero() {
 
             <a
 
-              href="/CV_Eidimice_Manzo_A.pdf"
+              href="/cv-EManzo.pdf"
               className="btn secondary"
               download="CV.pdf"
             >
