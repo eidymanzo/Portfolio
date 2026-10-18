@@ -29,10 +29,9 @@ function Hero() {
             </a>
 
             <a
-
-              href="/cv-EManzo.pdf"
+              href="/cv-EManzo.pdf?v=20261018"
               className="btn secondary"
-              download="CV.pdf"
+              download="cv-EManzo.pdf"
             >
               Descargar CV
             </a>
