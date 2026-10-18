@@ -7,11 +7,20 @@ function Hero() {
         <div className="hero-text-container">
           <p className="tag">Hola soy Eidimice Manzo</p>
 
-          <h1>Desarrolladora Full Stack Junior</h1>
+          <h1>
+            Software Developer | Java · Spring Boot
+            <br />
+            Data Engineering & AI
+          </h1>
 
           <p className="hero-text">
-            Especializada en Java, Spring Boot, Angular y React, con experiencia
-            en el desarrollo de aplicaciones web, APIs REST y bases de datos SQL.
+            <p className="hero-text">
+              Software Developer specializing in Java, Spring Boot
+              and REST APIs, with experience in Angular, React
+              and SQL databases. Currently expanding my expertise
+              in Data Engineering, Python, Artificial Intelligence
+              and Microsoft Azure.
+            </p>
           </p>
 
           <div className="hero-buttons">
@@ -20,9 +29,10 @@ function Hero() {
             </a>
 
             <a
-              href="/cv-EManzo.pdf"
+
+              href="/CV_Eidimice_Manzo_A.pdf"
               className="btn secondary"
-              download
+              download="CV.pdf"
             >
               Descargar CV
             </a>
